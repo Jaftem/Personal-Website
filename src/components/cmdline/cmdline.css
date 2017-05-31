@@ -1,0 +1,17 @@
+.cmd-line {
+	background-color: #24292E;
+	width: 100%;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	padding-top: 13px;
+	padding-bottom: 13px;
+}
+
+.lines {
+}
+.cmd-container {
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 0px;
+	margin-bottom: 50px;
+}

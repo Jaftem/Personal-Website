@@ -1,0 +1,41 @@
+.line {
+	list-style-type: none;
+	padding: 0;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: 0;
+	line-height: 21px;
+}
+.lines-list {
+	padding: 0;
+	margin: 0;
+}
+
+.name {
+	background-color: #fff;
+	color: #000;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+.yellow-span {
+	color: #DADB74;
+}
+
+.cyan-span {
+	color: #66D9EF;
+}
+
+.green-span {
+	color: #A6E22C;
+}
+
+.pink-span {
+	color: #F92670;
+}
+
+.purple-span {
+	color: #AE81FF;
+}
