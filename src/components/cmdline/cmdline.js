@@ -26,7 +26,7 @@ class CmdLine extends Component {
 				break;
 			case 'resume':
 				this.sendNewMessage('~ resume');
-				this.sendNewMessage('Viewing my resume is as simple as clicking <a href="https://drive.google.com/file/d/0BywUZPjWJGBbaEhEYl84T2ttaE0/view"><span class="green-span">here</span></a>!');
+				this.sendNewMessage('Viewing my resume is as simple as clicking <a href="https://drive.google.com/file/d/0BywUZPjWJGBbTnRMaGJ4ZnZna2s/view?usp=sharing"><span class="green-span">here</span></a>!');
 				break;
 			case 'github':
 				this.sendNewMessage('~ github');
@@ -42,7 +42,7 @@ class CmdLine extends Component {
 				break;
 			case 'about':
 				this.sendNewMessage('~ about');
-				this.sendNewMessage('<span class="pink-span">ABOUT THIS WEBSITE:</span><br />Using <span class="cyan-span">React</span> to build this website was complete overkill.<br />By Jeremy Aftem.')
+				this.sendNewMessage('<span class="pink-span">ABOUT THIS WEBSITE:</span><br />Built with <span class="cyan-span">React</span>.  />By Jeremy Aftem.')
 				break;
 			case 'clear':
 				this.setState({messages: [], });
