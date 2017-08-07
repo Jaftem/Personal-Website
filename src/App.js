@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactGA from 'react-ga';
 import ReactDOM from 'react-dom';
 import logo from './logo.svg';
 import './App.css';
@@ -9,6 +10,9 @@ class App extends Component {
   constructor(props) {
     super(props);
     document.title = 'Jeremy Aftem'
+
+    ReactGA.initialize('UA-104170423-1');
+    ReactGA.pageview(window.location.pathname);
   }
   onChangeHandler() {
     const node = ReactDOM.findDOMNode(this.messagesEnd);
@@ -19,7 +23,6 @@ class App extends Component {
   }
   render() {
     return (
-
       <div className="app-container">
         <div className="app-header">
          <div className="nav">Jeremy Aftem</div>
@@ -40,6 +43,10 @@ class App extends Component {
         <div className="buffer-space"/>
                <div style={{ float:"left", clear: "both" }}
              ref={(el) => { this.messagesEnd = el; }} />
+
+             <div className="app-footer">
+               <a href="http://www.github.com/Jaftem/Personal-Website"><img className="github" src={require('./github.png')} alt={"Check out this website's code on my Github!"}/></a>
+             </div>
       </div>
     );
   }

@@ -17,6 +17,23 @@
   width: 100vw;
 }
 
+.app-footer {
+  position: absolute;
+  height: 24px;
+  width:24px;
+  color: #24292E;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding-bottom: 15px;
+}
+
+.github {
+  width: 24px;
+  height:24px;
+}
+
 .app-header {
   margin: 0 auto;
   width: 75vw;
@@ -31,6 +48,7 @@
 
 .buffer-space {
   height: 5vh;
+  margin: 0 auto;
 }
 
 .app-body {
