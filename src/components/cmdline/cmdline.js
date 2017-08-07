@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import './cmdline.css';
 import Input from './input/input';
 import LinesList from './linesList/linesList';
-
-// Front page
 
 class CmdLine extends Component {
 	constructor(props, context) {
@@ -23,7 +22,7 @@ class CmdLine extends Component {
 				break;
 			case 'help':
 				this.sendNewMessage('~ help');
-				this.sendNewMessage('<span class="cyan-span">AVAILABLE COMMANDS:</span> <br/>&nbsp;&nbsp;&nbsp;`hello`   - welcome message<br/>&nbsp;&nbsp;&nbsp;`resume`  - link to resume<br />&nbsp;&nbsp;&nbsp;`github` - link to github<br\>&nbsp;&nbsp;&nbsp;`contact` - contact information<br />&nbsp;&nbsp;&nbsp;`about` - About this website<br/>&nbsp;&nbsp;&nbsp;`clear`   - clear terminal');
+				this.sendNewMessage('<span class="cyan-span">AVAILABLE COMMANDS:</span> <br/>&nbsp;&nbsp;&nbsp;`hello`   - welcome message<br/>&nbsp;&nbsp;&nbsp;`resume`  - link to resume<br />&nbsp;&nbsp;&nbsp;`github` - link to github<br\>&nbsp;&nbsp;&nbsp;`contact` - contact information<br />&nbsp;&nbsp;&nbsp;`about` - about this website<br/>&nbsp;&nbsp;&nbsp;`clear`   - clear terminal');
 				break;
 			case 'resume':
 				this.sendNewMessage('~ resume');
@@ -35,7 +34,7 @@ class CmdLine extends Component {
 				break;
 			case 'contact':
 				this.sendNewMessage('~ contact');
-				this.sendNewMessage('<span class="cyan-span">CONTACT INFORMATION:</span> <br/>&nbsp;&nbsp;&nbsp;Email: aftem@usc.edu<br />&nbsp;&nbsp;&nbsp;See `<span class="pink-span">resume</span>` for more ways you can get in touch with me.');
+				this.sendNewMessage('<span class="cyan-span">CONTACT INFORMATION:</span> <br/>I\'ll try to get back to you ASAP!<br/>&nbsp;&nbsp;&nbsp;<span class="yellow-span">Email: aftem@usc.edu</span><br />&nbsp;&nbsp;&nbsp;Or see `<span class="pink-span">resume</span>` for more ways you can get in touch with me.');
 				break;
 			case 'ls':
 				this.sendNewMessage('~ ls');
@@ -58,24 +57,21 @@ class CmdLine extends Component {
 		let msgs = this.state.messages;
 		msgs.push(newMsg);
 		this.setState({messages: msgs});
+		this.props.onChange();
 	}
+
+
 
   render() {
     return (
       <div className="cmd-container">
-      <div className="cmd-line">
+           <div className="cmd-line">
       	<LinesList messages={this.state.messages} />
       	<Input onChange={this.newMessageHandler} />
       </div>
-      </div> 
-    );
-  }
 
-  // When a new line is entered
-  newLine(msg) {
-  	let msgs = this.state.messages;
-  	msgs.concat(msg);
-  	this.setState({messages: msgs});
+      </div>
+    );
   }
 }
 
