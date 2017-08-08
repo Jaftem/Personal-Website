@@ -11,7 +11,8 @@ class App extends Component {
     super(props);
     document.title = 'Jeremy Aftem'
 
-    ReactGA.initialize('UA-104170423-1');
+    ReactGA.initialize('UA-104170423-1')
+    ReactGA.set({ page: window.location.pathname });
     ReactGA.pageview(window.location.pathname);
   }
   onChangeHandler() {
