@@ -18,7 +18,7 @@ class CmdLine extends Component {
 		switch(newMsg) {
 			case 'hello':
 				this.sendNewMessage('~ hello');
-				this.sendNewMessage('Hi, my name is <span class="name">Jeremy Aftem</span> and I am a CS student living in <span class="yellow-span">sunny Los Angeles, California</span>. I love to build, develop, and create things that people will find useful. In my spare time, I photograph and film my life.<br/>&nbsp;<br/>Type `<span class="pink-span">help</span>` for a list of available commands.');
+				this.sendNewMessage('Hi, my name is <span class="name">Jeremy Aftem</span> and I am a software engineer living in <span class="yellow-span">sunny Los Angeles, California</span>. I love to build, develop, and create things that people will find useful. In my spare time, I photograph and film my life.<br/>&nbsp;<br/>Type `<span class="pink-span">help</span>` for a list of available commands.');
 				break;
 			case 'help':
 				this.sendNewMessage('~ help');
@@ -26,7 +26,7 @@ class CmdLine extends Component {
 				break;
 			case 'resume':
 				this.sendNewMessage('~ resume');
-				this.sendNewMessage('Viewing my resume is as simple as clicking <a href="https://drive.google.com/file/d/0BywUZPjWJGBbTnRMaGJ4ZnZna2s/view?usp=sharing"><span class="green-span">here</span></a>!');
+				this.sendNewMessage('Viewing my resume is as simple as clicking <a href="https://docs.google.com/document/d/1fmDUbsXtNZGyLWYn4-J-kiVSJ1Cxjhus_cSXnC5eDoI/edit?usp=sharing"><span class="green-span">here</span></a>!');
 				break;
 			case 'github':
 				this.sendNewMessage('~ github');
@@ -34,7 +34,7 @@ class CmdLine extends Component {
 				break;
 			case 'contact':
 				this.sendNewMessage('~ contact');
-				this.sendNewMessage('<span class="cyan-span">CONTACT INFORMATION:</span> <br/>I\'ll try to get back to you ASAP!<br/>&nbsp;&nbsp;&nbsp;<span class="yellow-span">Email: aftem@usc.edu</span><br />&nbsp;&nbsp;&nbsp;Or see `<span class="pink-span">resume</span>` for more ways you can get in touch with me.');
+				this.sendNewMessage('<span class="cyan-span">CONTACT INFORMATION:</span> <br/>I\'ll try to get back to you ASAP!<br/>&nbsp;&nbsp;&nbsp;<span class="yellow-span">Email: jeremyaftem.dev[at]gmail[dot]com</span><br />&nbsp;&nbsp;&nbsp;Or see `<span class="pink-span">resume</span>` for more ways you can get in touch with me.');
 				break;
 			case 'ls':
 				this.sendNewMessage('~ ls');
